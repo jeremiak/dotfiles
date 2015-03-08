@@ -1,0 +1,20 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "dotfiles for @jeremiak",
+  "main": "index.js",
+  "scripts": {
+    "get-gitconfig": "cp ~/.gitconfig ./.gitconfig",
+    "set-gitconfig": "cp ./.gitconfig ~/.gitconfig",
+    "get-vimrc": "cp ~/.vimrc ./.vimrc",
+    "set-vimrc": "cp ./.vimrc ~/.vimrc",
+    "get-all": "npm run get-gitconfig & npm run get-vimrc",
+    "set-all": "npm run set-gitconfig & npm run set-vimrc", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dotfiles"
+  ],
+  "author": "jeremiak",
+  "license": "ISC"
+}
