@@ -100,4 +100,5 @@ export WORKON_HOME=~/.envs
 alias code="cd ~/code"
 
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
